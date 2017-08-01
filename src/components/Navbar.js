@@ -17,9 +17,11 @@ export default class Navbar extends Component {
         <Image src={logo} size='mini' />
          Predicatable Retirement
         </Menu.Item>
-        <Menu.Item name='about' active={activeItem === 'aboutUs'} onClick={this.handleItemClick} />
-        <Menu.Item name='blog' active={activeItem === 'jobs'} onClick={this.handleItemClick} />
-        <Menu.Item name='content' active={activeItem === 'locations'} onClick={this.handleItemClick} />
+        <Menu.Menu position='right'>
+          <Menu.Item name='about' active={activeItem === 'aboutUs'} onClick={this.handleItemClick} />
+          <Menu.Item name='blog' active={activeItem === 'blog'} onClick={this.handleItemClick} />
+          <Menu.Item name='content' active={activeItem === 'content'} onClick={this.handleItemClick} />
+        </Menu.Menu>
       </Menu>
       </Segment>
     )
