@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { Menu, Image, Segment } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { Menu, Image, Segment } from 'semantic-ui-react';
 import logo from '../assets/logo.jpg';
 
-export default class Navbar extends Component {
+export default class Footer extends Component {
   state = {}
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -13,7 +13,7 @@ export default class Navbar extends Component {
     return (
       <Segment tertiary>
       <Menu tertiary>
-        <Menu.Item header>
+        <Menu.Item>
         <Image src={logo} size='mini' />
          Predicatable Retirement
         </Menu.Item>
