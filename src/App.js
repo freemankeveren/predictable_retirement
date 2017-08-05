@@ -46,26 +46,29 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Segment basic>
-              <Button color='teal'>Take the First Step</Button>
+              <Button size='big' color='teal'>Take the First Step</Button>
             </Segment>
           </Grid>
 
           </Segment>
         </Segment>
         <Segment basic>
-        <Grid columns={2} padded='vertically'>
+        <Grid columns={3} padded='vertically'>
           <Grid.Column>
             <h1>Learn how to make your own<br/>
             Predicatable Retirement</h1>
-            <h3>Hundreds of people just like you have found <br/> a Predicatable Retirement with out sytem. Stay up to date <br/> with our valuable emails sent weekly.</h3>
+            <h3>Hundreds of people just like you have found <br/> a Predicatable Retirement with out sytem. Stay up to <br/> date with our valuable emails sent weekly.</h3>
           </Grid.Column>
           <Grid.Column verticalAlign='middle'>
             <Form>
-              <Form.Input placeholder='Email' />
-              <Button color='teal'>Submit</Button>
+              <Form.Input size='big' placeholder='Email' />
             </Form>
           </Grid.Column>
+          <Grid.Column verticalAlign='middle'>
+            <Button size='big' color='teal'>Submit</Button>
+          </Grid.Column>
         </Grid>
+        <Segment basic textAlign='center'><label>No Spam Ever</label></Segment>
         <Grid columns={2} padded='vertically'>
           <Grid.Column>
             <Image src={displayphoto} />
@@ -133,7 +136,59 @@ class App extends Component {
           </Grid.Column>
         </Grid>
         </Segment>
-
+        <Segment basic textAlign='center'>
+          <h1>Your Focus Depends on Your Stage of Life</h1>
+          <h4>Stop the transfer of wealth away from you. Then focus on the stage of life you are in.</h4>
+        </Segment>
+          <Segment basic>
+            <Grid columns={2}>
+              <Grid.Column>
+                <div></div>
+              </Grid.Column>
+              <Grid.Column>
+                <h3>Accumulation</h3>
+                <h1>Age 25-50</h1>
+                <h4>Example Text</h4>
+                <Button size='big' color='teal'>Get Started</Button>
+              </Grid.Column>
+            </Grid>
+          </Segment>
+          <Segment basic>
+            <Grid columns={2}>
+              <Grid.Column>
+                <div></div>
+              </Grid.Column>
+              <Grid.Column>
+                <h3>Conservation</h3>
+                <h1>Age 50-70</h1>
+                <h4>Example Text</h4>
+                <Button position='right' size='big' color='teal'>Get Started</Button>
+              </Grid.Column>
+            </Grid>
+          </Segment>
+          <Segment basic>
+            <Grid columns={2}>
+              <Grid.Column>
+                <div></div>
+              </Grid.Column>
+              <Grid.Column>
+                <h3>Distribution</h3>
+                <h1>Age 70 + </h1>
+                <h4>Example Text</h4>
+                <Button size='big' color='teal'>Get Started</Button>
+              </Grid.Column>
+            </Grid>
+          </Segment>
+        <Segment tertiary>
+          <Grid columns={3}>
+            <Grid.Column verticalAlign='middle'>
+              <h2 verticalAlign='middle'>Testimonials</h2>
+              <h4 verticalAlign='middle'>Hundreds of people just like you <br/>
+                  have found a Predicatable <br/>
+                  Retirement with our system.</h4>
+            </Grid.Column>
+          </Grid>
+        </Segment>
       </div>
     );
   }
