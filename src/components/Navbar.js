@@ -11,9 +11,8 @@ export default class Navbar extends Component {
     const { activeItem } = this.state
 
     return (
-      <Segment tertiary>
       <Menu>
-        <Menu.Item header>
+        <Menu.Item>
         <Image src={logo} size='mini' />
          Predicatable Retirement
         </Menu.Item>
@@ -32,7 +31,6 @@ export default class Navbar extends Component {
           <Menu.Item name='content' active={activeItem === 'content'} onClick={this.handleItemClick} />
         </Menu.Menu>
       </Menu>
-      </Segment>
     )
   }
 }
