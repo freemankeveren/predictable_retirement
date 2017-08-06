@@ -3,18 +3,61 @@ import './App.css';
 import Navbar from './components/Navbar';
 import { Segment, Grid, Image, Button, Form } from 'semantic-ui-react';
 import placeholder from './assets/Oval.jpg';
-import displayphoto from './assets/displayphoto.jpg'
-import babyphoto from './assets/babyphoto.jpg'
-import inflationphoto from './assets/inflationphoto.jpg'
-import roadphoto from './assets/roadphoto.jpg'
+
+import incomephoto from './assets/displayphoto.jpg'
+import inflationphoto from './assets/babyphoto.jpg'
+import liquidityphoto from './assets/inflationphoto.jpg'
+import ltcphoto from './assets/roadphoto.jpg'
 import legacyphoto from './assets/legacyphoto.jpg'
+
 import Footer from './components/Footer';
+
+
+
+const style = {
+  heroFront:{
+    backgroundColor: '#ccc',
+    borderRadius: '0',
+    boxShadow: 'none',
+  },
+
+  incomePhoto:{
+    background: `url(${incomephoto}) no-repeat center center`,
+    backgroundSize: 'cover',
+    minHeight: '300',
+  },
+
+  inflationPhoto:{
+    background: `url(${inflationphoto}) no-repeat center center`,
+    backgroundSize: 'cover',
+    minHeight: '300',
+  },
+
+  liquidityPhoto:{
+    background: `url(${liquidityphoto}) no-repeat center center`,
+    backgroundSize: 'cover',
+    minHeight: '300',
+  },
+
+  ltcPhoto:{
+    background: `url(${ltcphoto}) no-repeat center center`,
+    backgroundSize: 'cover',
+    minHeight: '300',
+  },
+
+  legacyPhoto:{
+    background: `url(${legacyphoto}) no-repeat center center`,
+    backgroundSize: 'cover',
+    minHeight: '300',
+  },
+
+}
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Segment secondary>
+        <Segment style={style.heroFront} >
           <Navbar />
           <Segment basic textAlign='center'>
             <h1 text-align='center'>Find Retirement Peace of Mind.</h1>
@@ -22,8 +65,8 @@ class App extends Component {
                                     We will help you understand the complicated world of retirement finance.</h4>
           </Segment>
           <Segment basic>
-          <Grid centered columns={10}>
-            <Grid.Row columns={10}>
+          <Grid centered columns={0}>
+            <Grid.Row columns={5}>
               <Grid.Column>
                 <Image src={placeholder} />
                 <h4 textAlign='center'>Income</h4>
@@ -68,12 +111,13 @@ class App extends Component {
             <Button size='big' color='teal'>Submit</Button>
           </Grid.Column>
         </Grid>
+
         <Segment basic textAlign='center'><label>No Spam Ever</label></Segment>
+
         <Grid columns={2} padded='vertically'>
-          <Grid.Column>
-            <Image src={displayphoto} />
-          </Grid.Column>
-          <Grid.Column verticalAlign='middle' textAlign='center'>
+          <Grid.Column style={style.incomePhoto} />
+
+          <Grid.Column verticalAlign='middle' textAlign='left'>
             <h3>Income</h3>
             <h1>Stop the
                 transfer of <br/>
@@ -83,8 +127,9 @@ class App extends Component {
             <h4>example placeholder</h4>
           </Grid.Column>
         </Grid>
+
         <Grid columns={2} padded='vertically'>
-          <Grid.Column verticalAlign='middle' textAlign='center'>
+          <Grid.Column verticalAlign='middle' textAlign='right'>
             <h3>Inflation</h3>
             <h1>Beat the
                 invisable <br/>
@@ -92,15 +137,13 @@ class App extends Component {
                 robs you</h1>
             <h4>example placeholder</h4>
           </Grid.Column>
-          <Grid.Column>
-            <Image src={inflationphoto} />
-          </Grid.Column>
+          <Grid.Column style={style.inflationPhoto} />
         </Grid>
+
         <Grid columns={2} padded='vertically'>
-          <Grid.Column>
-            <Image src={babyphoto} />
-          </Grid.Column>
-          <Grid.Column verticalAlign='middle' textAlign='center'>
+          <Grid.Column style={style.liquidityPhoto} />
+
+          <Grid.Column verticalAlign='middle' textAlign='left'>
             <h3>Liquidity</h3>
             <h1>Money in
                 motion <br/>
@@ -110,7 +153,7 @@ class App extends Component {
           </Grid.Column>
         </Grid>
         <Grid columns={2} padded='vertically'>
-          <Grid.Column verticalAlign='middle' textAlign='center'>
+          <Grid.Column verticalAlign='middle' textAlign='right'>
             <h3>Long Term Care</h3>
             <h1>Prepare for
                 long term <br/>
@@ -118,15 +161,15 @@ class App extends Component {
                 care</h1>
             <h4>example placeholder</h4>
           </Grid.Column>
-          <Grid.Column>
-            <Image src={roadphoto} />
-          </Grid.Column>
+
+          <Grid.Column style={style.ltcPhoto} />
+
         </Grid>
+
         <Grid columns={2} padded='vertically'>
-          <Grid.Column>
-            <Image src={legacyphoto} />
-          </Grid.Column>
-          <Grid.Column verticalAlign='middle' textAlign='center'>
+          <Grid.Column style={style.legacyPhoto} />
+
+          <Grid.Column verticalAlign='middle' textAlign='left'>
             <h3>Legacy</h3>
             <h1>What will
                 your legacy <br/>
@@ -136,6 +179,7 @@ class App extends Component {
           </Grid.Column>
         </Grid>
         </Segment>
+
         <Segment basic textAlign='center'>
           <h1>Your Focus Depends on Your Stage of Life</h1>
           <h4>Stop the transfer of wealth away from you. Then focus on the stage of life you are in.</h4>
@@ -169,7 +213,7 @@ class App extends Component {
           <Segment basic>
             <Grid columns={2}>
               <Grid.Column>
-                <div></div>
+                <div>Hello</div>
               </Grid.Column>
               <Grid.Column>
                 <h3>Distribution</h3>
