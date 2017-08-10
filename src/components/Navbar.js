@@ -34,6 +34,7 @@ class NavBar extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
   render() {
+        const { activeItem } = this.state
     return (
       <div style={style.divStyle}>
         <Menu secondary>
@@ -44,7 +45,15 @@ class NavBar extends Component {
           { this.rightNavs() }
           <Menu.Menu position='right'>
             <Menu.Item name='About' />
-            <Menu.Item name='Principles' />
+            <Dropdown item text='Principles'>
+              <Dropdown.Menu>
+                <Dropdown.Item>Income</Dropdown.Item>
+                <Dropdown.Item>Inflation</Dropdown.Item>
+                <Dropdown.Item>Liquidity</Dropdown.Item>
+                <Dropdown.Item>Long Term Care</Dropdown.Item>
+                <Dropdown.Item>Legacy</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
             <Menu.Item name='Blog' />
             <Menu.Item name='Contact' />
         </Menu.Menu>
