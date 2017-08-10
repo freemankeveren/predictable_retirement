@@ -12,13 +12,12 @@ import legacyphoto from './assets/legacyphoto.jpg'
 
 import Footer from './components/Footer';
 
-
-
 const style = {
   heroFront:{
     backgroundColor: '#ccc',
     borderRadius: '0',
     boxShadow: 'none',
+    padding: '0px',
   },
 
   incomePhoto:{
@@ -50,14 +49,13 @@ const style = {
     backgroundSize: 'cover',
     minHeight: '300',
   },
-
 }
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Segment style={style.heroFront} >
+        <Segment style={style.heroFront}>
           <Navbar />
           <Segment basic textAlign='center'>
             <h1 text-align='center'>Find Retirement Peace of Mind.</h1>
@@ -66,7 +64,7 @@ class App extends Component {
           </Segment>
           <Segment basic>
           <Grid centered columns={0}>
-            <Grid.Row columns={5}>
+            <Grid.Row columns={10}>
               <Grid.Column>
                 <Image src={placeholder} />
                 <h4 textAlign='center'>Income</h4>
@@ -223,11 +221,11 @@ class App extends Component {
               </Grid.Column>
             </Grid>
           </Segment>
-        <Segment tertiary>
+        <Segment secondary>
           <Grid columns={3}>
-            <Grid.Column verticalAlign='middle'>
-              <h2 verticalAlign='middle'>Testimonials</h2>
-              <h4 verticalAlign='middle'>Hundreds of people just like you <br/>
+            <Grid.Column>
+              <h2>Testimonials</h2>
+              <h4>Hundreds of people just like you <br/>
                   have found a Predicatable <br/>
                   Retirement with our system.</h4>
             </Grid.Column>
