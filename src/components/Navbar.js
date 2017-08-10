@@ -20,7 +20,7 @@ const style = {
     marginTop: '-20px',
     textAlign: 'right',
     float: 'left',
-}
+  }
 }
 
 

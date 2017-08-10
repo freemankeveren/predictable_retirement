@@ -14,7 +14,6 @@ import Footer from './components/Footer';
 
 const style = {
   heroFront:{
-    backgroundColor: '#ccc',
     borderRadius: '0',
     boxShadow: 'none',
     padding: '0px',
@@ -23,31 +22,31 @@ const style = {
   incomePhoto:{
     background: `url(${incomephoto}) no-repeat center center`,
     backgroundSize: 'cover',
-    minHeight: '300',
+    minHeight: '600px',
   },
 
   inflationPhoto:{
     background: `url(${inflationphoto}) no-repeat center center`,
     backgroundSize: 'cover',
-    minHeight: '300',
+    minHeight: '600px',
   },
 
   liquidityPhoto:{
     background: `url(${liquidityphoto}) no-repeat center center`,
     backgroundSize: 'cover',
-    minHeight: '300',
+    minHeight: '600px',
   },
 
   ltcPhoto:{
     background: `url(${ltcphoto}) no-repeat center center`,
     backgroundSize: 'cover',
-    minHeight: '300',
+    minHeight: '600px',
   },
 
   legacyPhoto:{
     background: `url(${legacyphoto}) no-repeat center center`,
     backgroundSize: 'cover',
-    minHeight: '300',
+    minHeight: '600px',
   },
 }
 
@@ -55,7 +54,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Segment style={style.heroFront}>
+        <Segment secondary style={style.heroFront}>
           <Navbar />
           <Segment basic textAlign='center'>
             <h1 text-align='center'>Find Retirement Peace of Mind.</h1>
@@ -221,7 +220,7 @@ class App extends Component {
               </Grid.Column>
             </Grid>
           </Segment>
-        <Segment secondary>
+        <Segment basic secondary>
           <Grid columns={3}>
             <Grid.Column>
               <h2>Testimonials</h2>
@@ -230,6 +229,9 @@ class App extends Component {
                   Retirement with our system.</h4>
             </Grid.Column>
           </Grid>
+        </Segment>
+        <Segment secondary style={style.heroFront}>
+          <Footer />
         </Segment>
       </div>
     );
