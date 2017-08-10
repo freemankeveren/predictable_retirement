@@ -41,11 +41,11 @@ class NavBar extends Component {
         <Menu.Item>
         <Image src={logo} size='mini' />
         </Menu.Item>
-            <Menu.Item name='Predicatable Retirement' />
+            <Menu.Item name='PREDICTABLE RETIREMENT' />
           { this.rightNavs() }
           <Menu.Menu position='right'>
-            <Menu.Item name='About' />
-            <Dropdown item text='Principles'>
+            <Menu.Item name='ABOUT' />
+            <Dropdown item text='PRINCIPLES'>
               <Dropdown.Menu>
                 <Dropdown.Item>Income</Dropdown.Item>
                 <Dropdown.Item>Inflation</Dropdown.Item>
@@ -54,8 +54,8 @@ class NavBar extends Component {
                 <Dropdown.Item>Legacy</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
-            <Menu.Item name='Blog' />
-            <Menu.Item name='Contact' />
+            <Menu.Item name='BLOG' />
+            <Menu.Item name='CONTACT' />
         </Menu.Menu>
         </Menu>
       </div>
