@@ -48,6 +48,16 @@ const style = {
     backgroundSize: 'cover',
     minHeight: '600px',
   },
+
+  navPhotos:{
+    padding: '0',
+    borderRadius: '360',
+  },
+
+  fromSide:{
+    padding: '25px'
+  }
+
 }
 
 class App extends Component {
@@ -64,24 +74,24 @@ class App extends Component {
           <Segment basic>
           <Grid centered columns={0}>
             <Grid.Row columns={10}>
-              <Grid.Column>
-                <Image src={placeholder} />
+              <Grid.Column textAlign='center'>
+                <Image src={incomephoto} style={style.navPhotos}/>
                 <h4 textAlign='center'>Income</h4>
               </Grid.Column>
-              <Grid.Column>
-                <Image src={placeholder} />
+              <Grid.Column textAlign='center'>
+                <Image src={inflationphoto} style={style.navPhotos}/>
                 <h4 text-align='center'>Inflation</h4>
               </Grid.Column>
-              <Grid.Column>
-                <Image src={placeholder} />
+              <Grid.Column textAlign='center'>
+                <Image src={liquidityphoto} style={style.navPhotos}/>
                 <h4 text-align='center'>Liquidity</h4>
               </Grid.Column>
-              <Grid.Column>
-                <Image src={placeholder} />
+              <Grid.Column textAlign='center'>
+                <Image src={ltcphoto} style={style.navPhotos}/>
                 <h4 text-align='center'>Long Term Care</h4>
               </Grid.Column>
-              <Grid.Column>
-                <Image src={placeholder} />
+              <Grid.Column textAlign='center'>
+                <Image src={legacyphoto} style={style.navPhotos}/>
                 <h4 text-align='center'>Legacy</h4>
               </Grid.Column>
             </Grid.Row>
@@ -94,7 +104,7 @@ class App extends Component {
         </Segment>
         <Segment basic>
         <Grid columns={3} padded='vertically'>
-          <Grid.Column>
+          <Grid.Column style={style.fromSide}>
             <h1>Learn how to make your own<br/>
             Predicatable Retirement</h1>
             <h3>Hundreds of people just like you have found <br/> a Predicatable Retirement with out sytem. Stay up to <br/> date with our valuable emails sent weekly.</h3>
@@ -232,7 +242,7 @@ class App extends Component {
         </Segment>
         <Segment basic>
           <h1>Our Latest Blog Posts</h1>
-          <Grid columns={2} padded='vertically'>
+          <Grid columns={2} style={style.fromSide}>
             <Grid.Column verticalAlign='middle'>
               <h3>Why You Will Pay More in Taxes at Retirement with a 401(k)</h3>
               <h4>Hundreds of people just like you have found a Predicatable Retirement <br />
@@ -244,7 +254,7 @@ class App extends Component {
               with our system. Stay up to date with our valuable emails sent weekly.</h4>
             </Grid.Column>
           </Grid>
-          <Grid columns={2} padded='vertically'>
+          <Grid columns={2} style={style.fromSide}>
             <Grid.Column verticalAlign='middle'>
               <h3>Start Saving into Whole Life Insurance (And Stop Saving into a 401k)</h3>
               <h4>Hundreds of people just like you have found a Predicatable Retirement <br />
