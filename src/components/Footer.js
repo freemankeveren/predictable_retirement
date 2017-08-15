@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Menu, Image, Segment, Dropdown } from 'semantic-ui-react'
 import logo from '../assets/logo.jpg';
 import { Link } from 'react-router-dom'
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 const style = {

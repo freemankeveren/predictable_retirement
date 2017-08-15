@@ -14,11 +14,28 @@ import legacyphoto from './assets/legacyphoto.jpg'
 import Footer from './components/Footer';
 
 const style = {
+buttonPrimary:{
+  backgroundColor: '#F28964',
+},
+
   heroFront:{
     borderRadius: '0',
     boxShadow: 'none',
-    padding: '0px',
+    padding: ' 64px 0',
+    margin:'0',
+    backgroundColor: '#EAF4F4',
   },
+
+  h0:{
+    fontSize: '48px',
+    fontWeight: '200',
+  },
+
+sectionEmailCapture:{
+  padding: ' 64px 0',
+  margin:'0',
+  backgroundColor: '#F4FCFF',
+},
 
   incomePhoto:{
     background: `url(${incomephoto}) no-repeat center center`,
@@ -57,7 +74,9 @@ const style = {
 
   fromSide:{
     padding: '25px'
-  }
+  },
+
+
 
 }
 
@@ -65,12 +84,17 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <Segment secondary style={style.heroFront}>
-          <Navbar />
+
           <Segment basic textAlign='center'>
-            <h1 text-align='center'>Find Retirement Peace of Mind.</h1>
-            <h4 text-align='center'>Following principles in each of these areas will dramatically impact your abilty to retire.<br/>
-                                    We will help you understand the complicated world of retirement finance.</h4>
+            <h1 text-align='center' style={style.h0}>
+              Find Retirement Peace of Mind.
+            </h1>
+            <h4 text-align='center'>
+              Following principles in each of these areas will dramatically impact your abilty to retire.<br/>
+              We will help you understand the complicated world of retirement finance.
+            </h4>
           </Segment>
           <Segment basic>
           <Grid centered columns={0}>
@@ -97,13 +121,13 @@ class App extends Component {
               </Grid.Column>
             </Grid.Row>
             <Segment basic>
-              <Button size='big' color='teal'>Take the First Step</Button>
+              <Button size='big' style={style.buttonPrimary}>Take the First Step</Button>
             </Segment>
           </Grid>
 
           </Segment>
         </Segment>
-        <Segment basic>
+        <Segment basic style={style.sectionEmailCapture}>
         <Grid columns={3} padded='vertically'>
           <Grid.Column style={style.fromSide}>
             <h1>Learn how to make your own<br/>
