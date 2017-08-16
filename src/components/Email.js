@@ -4,8 +4,15 @@ import logo from '../assets/logo.jpg';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import '../App.css';
 
 const style = {
+
+  sectionEmailCapture:{
+    padding: ' 64px 0',
+    margin:'0',
+    backgroundColor: '#F4FCFF',
+  },
 
   fromSide: {
     padding: '25px'
@@ -18,7 +25,7 @@ class Email extends Component {
   render() {
     return (
     <div>
-    <Segment basic>
+    <Segment basic style={style.sectionEmailCapture}>
       <Grid columns={3} padded='vertically'>
         <Grid.Column style={style.fromSide}>
           <h1>Learn how to make your own<br/>

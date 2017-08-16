@@ -4,6 +4,7 @@ import logo from '../assets/logo.jpg';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import '../App.css';
 
 class Testimonials extends Component {
   state = {}

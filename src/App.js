@@ -12,10 +12,16 @@ import Blogs from './components/Blogs';
 import Footer from './components/Footer';
 
 const style = {
+buttonPrimary:{
+  backgroundColor: '#F28964',
+},
+
   heroFront:{
     borderRadius: '0',
     boxShadow: 'none',
-    padding: '0px',
+    padding: ' 64px 0',
+    margin:'0',
+    backgroundColor: '#EAF4F4',
   },
 }
 
@@ -23,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <div>
+
         <Segment secondary style={style.heroFront}>
           <Navbar />
           <Retirement />

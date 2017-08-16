@@ -4,6 +4,7 @@ import logo from '../assets/logo.jpg';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import '../App.css';
 
 import incomephoto from '../assets/displayphoto.jpg';
 import inflationphoto from '../assets/babyphoto.jpg';
@@ -12,6 +13,15 @@ import ltcphoto from '../assets/roadphoto.jpg';
 import legacyphoto from '../assets/legacyphoto.jpg';
 
 const style = {
+
+  buttonPrimary:{
+    backgroundColor: '#F28964',
+  },
+
+  h0:{
+    fontSize: '48px',
+    fontWeight: '200',
+  },
 
   navPhotos:{
     padding: '0',
@@ -25,11 +35,15 @@ class Retirement extends Component {
   render() {
     return (
     <div>
-      <Segment basic textAlign='center'>
-        <h1 text-align='center'>Find Retirement Peace of Mind.</h1>
-        <h4 text-align='center'>Following principles in each of these areas will dramatically impact your abilty to retire.<br/>
-                                We will help you understand the complicated world of retirement finance.</h4>
-      </Segment>
+    <Segment basic textAlign='center'>
+      <h1 text-align='center' style={style.h0}>
+        Find Retirement Peace of Mind.
+      </h1>
+      <h4 text-align='center'>
+        Following principles in each of these areas will dramatically impact your abilty to retire.<br/>
+        We will help you understand the complicated world of retirement finance.
+      </h4>
+    </Segment>
       <Segment basic>
         <Grid centered columns={0}>
           <Grid.Row columns={10}>
@@ -55,7 +69,7 @@ class Retirement extends Component {
             </Grid.Column>
           </Grid.Row>
           <Segment basic>
-            <Button size='big' color='teal'>Take the First Step</Button>
+            <Button size='big' style={style.buttonPrimary}>Take the First Step</Button>
           </Segment>
         </Grid>
       </Segment>
