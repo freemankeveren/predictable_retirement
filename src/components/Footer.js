@@ -26,7 +26,6 @@ class Footer extends Component {
   state = {}
 
   render() {
-        const { activeItem } = this.state
     return (
       <div style={style.divStyle}>
         <Menu secondary>

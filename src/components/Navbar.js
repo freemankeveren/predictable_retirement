@@ -20,7 +20,6 @@ class NavBar extends Component {
   state = {}
 
   render() {
-        const { activeItem } = this.state
     return (
       <div style={style.header}>
         <Menu secondary>
