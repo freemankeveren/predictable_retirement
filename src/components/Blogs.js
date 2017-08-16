@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Image, Segment, Dropdown, Grid } from 'semantic-ui-react'
+import { Segment, Grid } from 'semantic-ui-react'
 import logo from '../assets/logo.jpg';
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux';

@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Image, Segment, Dropdown, Grid, Button } from 'semantic-ui-react'
-import logo from '../assets/logo.jpg';
-import { Link } from 'react-router-dom'
-import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { Segment, Grid, Button } from 'semantic-ui-react'
 import '../App.css';
 
 class StageOfLife extends Component {

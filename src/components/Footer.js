@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
-import { Menu, Image, Segment, Dropdown } from 'semantic-ui-react'
+import { Menu, Image, Dropdown } from 'semantic-ui-react'
 import logo from '../assets/logo.jpg';
-import { Link } from 'react-router-dom'
-// import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import '../App.css';
 
 const style = {
@@ -28,12 +25,6 @@ const style = {
 class Footer extends Component {
   state = {}
 
-  rightNavs = () => {
-    const { user, dispatch, history } = this.props;
-  }
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
   render() {
         const { activeItem } = this.state
     return (
@@ -43,7 +34,6 @@ class Footer extends Component {
         <Image src={logo} size='mini' />
         </Menu.Item>
             <Menu.Item name='PREDICTABLE RETIREMENT' />
-          { this.rightNavs() }
           <Menu.Menu position='right'>
             <Menu.Item name='ABOUT' />
             <Dropdown item text='PRINCIPLES'>
