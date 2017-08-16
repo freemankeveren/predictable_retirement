@@ -30,16 +30,25 @@ class App extends Component {
     return (
       <div>
 
+      <Navbar />
         <Segment secondary style={style.heroFront}>
-          <Navbar />
           <Retirement />
         </Segment>
         <Segment basic>
           <Email />
+        </Segment>
+        <Segment>
           <FileConcepts />
-          <StageOfLife />
-          <Testimonials />
-          <Blogs />
+        </Segment>
+        <Segment><FileConcepts /></Segment>
+        <Segment><StageOfLife /></Segment>
+        <Segment><Testimonials /></Segment>
+        <Segment><Blogs /></Segment>
+
+
+
+
+          <Segment>
         </Segment>
         <Segment secondary style={style.heroFront}>
           <Footer />
