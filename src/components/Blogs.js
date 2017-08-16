@@ -6,21 +6,10 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 const style = {
-  divStyle: {
-    background: '#e0e2e4',
-    height: '25vh',
-    width: '100%',
-    webkitBackgroundSize: 'cover',
-    mozBackgroundSize: 'cover',
-    oBackgroundSize: 'cover',
-    backgroundSize: 'cover',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'top',
-    marginTop: '-17px',
-    textAlign: 'right',
-    float: 'left',
-  }
+
+  fromSide: {
+    padding: '25px'
+  },
 }
 
 
