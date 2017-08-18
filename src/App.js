@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
 import { Segment } from 'semantic-ui-react';
+import NoMatch from './components/NoMatch'
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 import Retirement from './components/Retirement';
 import Email from './components/Email';
 import FileConcepts from './components/FileConcepts';
@@ -15,7 +18,7 @@ const style = {
   heroFront:{
     borderRadius: '0',
     boxShadow: 'none',
-    padding: '0',
+    padding: '64px',
     margin:'0',
     backgroundColor: '#EAF4F4',
   },
@@ -24,25 +27,17 @@ const style = {
 class App extends Component {
   render() {
     return (
-      <div>
 
-      <Navbar />
-        <Segment secondary style={style.heroFront}>
-          <Retirement />
-          <Email />
-        </Segment>
-        <Segment basic>
-          <FileConcepts />
-          <StageOfLife />
-          <Testimonials />
-          <Blogs />
-        </Segment>
-        <Segment style={style.heroFront}>
-          <Footer />
-        </Segment>
-      </div>
-    );
-  }
+<div>
+  <Navbar />
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route component={NoMatch} />
+    </Switch>
+  <Footer />
+</div>
+);
+}
 }
 
 export default App;

@@ -5,9 +5,12 @@ import '../App.css';
 
 const style = {
   divStyle: {
-    background: '#e0e2e4',
+    background: '#93B5C6',
     height: '25vh',
     width: '100%',
+    padding:'24px',
+    display: 'flex',
+    flexDirection: 'column',
     webkitBackgroundSize: 'cover',
     mozBackgroundSize: 'cover',
     oBackgroundSize: 'cover',
@@ -18,6 +21,11 @@ const style = {
     marginTop: '-17px',
     textAlign: 'right',
     float: 'left',
+  },
+
+  header: {
+    display: 'flex',
+    flexDirection: 'column',
   }
 }
 
