@@ -7,7 +7,13 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import About from './components/About';
+import Blog from './components/Blog';
+import Contact from './components/Contact'
 import Income from './components/Income';
+import Inflation from './components/Inflation';
+import Liquidity from './components/Liquidity';
+import Longtermcare from './components/Longtermcare'
+import Legacy from './components/Legacy'
 
 const style = {
 
@@ -29,7 +35,13 @@ class App extends Component {
     <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/about' component={About} />
+      <Route exact path='/blog' component={Blog} />
       <Route exact path='/income' component={Income} />
+      <Route exact path='/inflation' component={Inflation} />
+      <Route exact path='/liquidity' component={Liquidity} />
+      <Route exact path='/longtermcare' component={Longtermcare} />
+      <Route exact path='/legacy' component={Legacy} />
+      <Route exact path='/contact' component={Contact} />
       <Route component={NoMatch} />
     </Switch>
   <Footer />

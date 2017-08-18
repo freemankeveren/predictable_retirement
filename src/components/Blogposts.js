@@ -10,7 +10,7 @@ const style = {
 }
 
 
-class Blogs extends Component {
+class Blogposts extends Component {
   state = {}
 
   render() {
@@ -47,4 +47,4 @@ class Blogs extends Component {
 }
 
 
-export default Blogs;
+export default Blogposts;

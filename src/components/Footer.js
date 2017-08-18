@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Menu, Image, Dropdown } from 'semantic-ui-react'
 import logo from '../assets/logo.jpg';
 import '../App.css';
+import { Link } from 'react-router-dom'
 
 const style = {
   divStyle: {
@@ -40,20 +41,56 @@ class Footer extends Component {
         <Menu.Item>
         <Image src={logo} size='mini' />
         </Menu.Item>
-            <Menu.Item name='PREDICTABLE RETIREMENT' />
+            <Menu.Item>
+              <Link to='/' style={{color:'black'}}>
+                PREDICTABLE RETIREMENT
+              </Link>
+            </Menu.Item>
           <Menu.Menu position='right'>
-            <Menu.Item name='ABOUT' />
+            <Menu.Item>
+              <Link to='/about' style={{color:'black'}}>
+                ABOUT
+              </Link>
+            </Menu.Item>
             <Dropdown item text='PRINCIPLES'>
               <Dropdown.Menu>
-                <Dropdown.Item>Income</Dropdown.Item>
-                <Dropdown.Item>Inflation</Dropdown.Item>
-                <Dropdown.Item>Liquidity</Dropdown.Item>
-                <Dropdown.Item>Long Term Care</Dropdown.Item>
-                <Dropdown.Item>Legacy</Dropdown.Item>
+              <Link to='/income'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Income
+                </Dropdown.Item>
+              </Link>
+              <Link to='/inflation'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Inflation
+                </Dropdown.Item>
+              </Link>
+              <Link to='/liquidity'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Liquidity
+                </Dropdown.Item>
+              </Link>
+              <Link to='/longtermcare'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Long Term Care
+                </Dropdown.Item>
+              </Link>
+              <Link to='/legacy'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Legacy
+                </Dropdown.Item>
+              </Link>
               </Dropdown.Menu>
             </Dropdown>
-            <Menu.Item name='BLOG' />
-            <Menu.Item name='CONTACT' />
+            <Menu.Item>
+              <Link to='/blog' style={{color:'black'}}>
+                BLOG
+              </Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to='/contact' style={{color:'black'}}>
+                CONTACT
+              </Link>
+            </Menu.Item>
         </Menu.Menu>
         </Menu>
       </div>

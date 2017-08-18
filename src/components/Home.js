@@ -7,7 +7,7 @@ import Email from './Email';
 import FileConcepts from './FileConcepts';
 import StageOfLife from './StageOfLife';
 import Testimonials from './Testimonials';
-import Blogs from './Blogs';
+import Blogs from './Blogposts';
 import Footer from './Footer';
 
 const style = {

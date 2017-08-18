@@ -35,7 +35,7 @@ class NavBar extends Component {
           <Menu.Menu position='right'>
             <Menu.Item>
               <Link to='/about' style={{color:'black'}}>
-              ABOUT
+                ABOUT
               </Link>
             </Menu.Item>
             <Dropdown item text='PRINCIPLES'>
@@ -45,14 +45,38 @@ class NavBar extends Component {
                   Income
                 </Dropdown.Item>
               </Link>
-                <Dropdown.Item>Inflation</Dropdown.Item>
-                <Dropdown.Item>Liquidity</Dropdown.Item>
-                <Dropdown.Item>Long Term Care</Dropdown.Item>
-                <Dropdown.Item>Legacy</Dropdown.Item>
+              <Link to='/inflation'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Inflation
+                </Dropdown.Item>
+              </Link>
+              <Link to='/liquidity'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Liquidity
+                </Dropdown.Item>
+              </Link>
+              <Link to='/longtermcare'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Long Term Care
+                </Dropdown.Item>
+              </Link>
+              <Link to='/legacy'>
+                <Dropdown.Item style={{color: 'black'}}>
+                  Legacy
+                </Dropdown.Item>
+              </Link>
               </Dropdown.Menu>
             </Dropdown>
-            <Menu.Item name='BLOG' />
-            <Menu.Item name='CONTACT' />
+            <Menu.Item>
+              <Link to='/blog' style={{color:'black'}}>
+                BLOG
+              </Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to='/contact' style={{color:'black'}}>
+                CONTACT
+              </Link>
+            </Menu.Item>
         </Menu.Menu>
         </Menu>
       </div>
