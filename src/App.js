@@ -5,13 +5,9 @@ import { Segment } from 'semantic-ui-react';
 import NoMatch from './components/NoMatch'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Retirement from './components/Retirement';
-import Email from './components/Email';
-import FileConcepts from './components/FileConcepts';
-import StageOfLife from './components/StageOfLife';
-import Testimonials from './components/Testimonials';
-import Blogs from './components/Blogs';
 import Footer from './components/Footer';
+import About from './components/About';
+import Income from './components/Income';
 
 const style = {
 
@@ -32,6 +28,8 @@ class App extends Component {
   <Navbar />
     <Switch>
       <Route exact path='/' component={Home} />
+      <Route exact path='/about' component={About} />
+      <Route exact path='/income' component={Income} />
       <Route component={NoMatch} />
     </Switch>
   <Footer />
