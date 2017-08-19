@@ -19,6 +19,11 @@ const style = {
     margin:'0',
     backgroundColor: '#EAF4F4',
   },
+
+  secondsection:{
+    padding: '0',
+    margin: '0'
+  },
 }
 
 class Home extends Component {
@@ -27,12 +32,20 @@ class Home extends Component {
       <div>
         <Segment secondary style={style.heroFront}>
           <Retirement />
+        </Segment>
+        <Segment basic style={style.secondsection}>
           <Email />
         </Segment>
         <Segment basic>
           <FileConcepts />
+        </Segment>
+        <Segment basic>
           <StageOfLife />
+        </Segment>
+        <Segment basic>
           <Testimonials />
+        </Segment>
+        <Segment basic>
           <Blogs />
         </Segment>
       </div>

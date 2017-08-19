@@ -10,6 +10,14 @@ import legacyphoto from '../assets/legacyphoto.jpg';
 
 const style = {
 
+  heroFront:{
+    borderRadius: '0',
+    boxShadow: 'none',
+    padding: '64px',
+    margin:'0',
+    backgroundColor: '#EAF4F4',
+  },
+
   buttonPrimary:{
     backgroundColor: '#F28964',
   },

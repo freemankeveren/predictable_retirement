@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Image, Dropdown } from 'semantic-ui-react'
+import { Menu, Image, Dropdown, Segment } from 'semantic-ui-react'
 import logo from '../assets/logo.jpg';
 import '../App.css';
 import { Link } from 'react-router-dom'
@@ -8,12 +8,25 @@ const style = {
   header: {
     background: '#93B5C6',
     padding:'24px',
-    width: '100%',
+    // width: '100%',
+    // display: 'flex',
+    // flexDirection: 'column',
+    // justifyContent: 'center',
+  },
+
+  widthContainer:{
+    background: '#93B5C6',
     display: 'flex',
-    flexDirection: 'column',
     justifyContent: 'center',
 
-  }
+    },
+
+    menuInside:{
+      width: '100%',
+      flexGrow: '1',
+      margin: 'auto',
+    },
+
 }
 
 
@@ -22,8 +35,9 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div style={style.header}>
-        <Menu secondary>
+      <nav style={style.header}>
+        <section style={style.widthContainer}>
+        <Menu secondary style={style.menuInside}>
         <Menu.Item>
         <Image src={logo} size='mini' />
         </Menu.Item>
@@ -79,7 +93,8 @@ class NavBar extends Component {
             </Menu.Item>
         </Menu.Menu>
         </Menu>
-      </div>
+        </section>
+      </nav>
     )
   }
 }
