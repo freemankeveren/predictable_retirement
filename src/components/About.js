@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Segment } from 'semantic-ui-react';
 
 class Income extends Component {
   render() {

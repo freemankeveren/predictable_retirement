@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Image, Dropdown, Segment } from 'semantic-ui-react'
+import { Menu, Image, Dropdown } from 'semantic-ui-react'
 import logo from '../assets/logo.jpg';
 import '../App.css';
 import { Link } from 'react-router-dom'

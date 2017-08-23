@@ -16,8 +16,6 @@ const style = {
     mozBackgroundSize: 'cover',
     oBackgroundSize: 'cover',
     backgroundSize: 'cover',
-    display: 'flex',
-    flexDirection: 'column',
     justifyContent: 'top',
     marginTop: '-17px',
     textAlign: 'right',

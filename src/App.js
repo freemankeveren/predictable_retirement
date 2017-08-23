@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import { Segment } from 'semantic-ui-react';
 import NoMatch from './components/NoMatch'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -14,17 +13,6 @@ import Inflation from './components/Inflation';
 import Liquidity from './components/Liquidity';
 import Longtermcare from './components/Longtermcare'
 import Legacy from './components/Legacy'
-
-const style = {
-
-  heroFront:{
-    borderRadius: '0',
-    boxShadow: 'none',
-    padding: '64px',
-    margin:'0',
-    backgroundColor: '#EAF4F4',
-  },
-}
 
 class App extends Component {
   render() {
