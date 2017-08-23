@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Image, Segment, Grid, Button } from 'semantic-ui-react'
 import '../App.css';
+import { Link } from 'react-router-dom'
 
 import incomephoto from '../assets/displayphoto.jpg';
 import inflationphoto from '../assets/babyphoto.jpg';
@@ -52,23 +53,33 @@ class Retirement extends Component {
         <Grid centered columns={0}>
           <Grid.Row columns={10}>
             <Grid.Column textAlign='center'>
-              <Image src={incomephoto} style={style.navPhotos}/>
+              <Link to='/income'>
+                <Image src={incomephoto} style={style.navPhotos}/>
+              </Link>
               <h4 textAlign='center'>Income</h4>
             </Grid.Column>
             <Grid.Column textAlign='center'>
-              <Image src={inflationphoto} style={style.navPhotos}/>
+              <Link to='/inflation'>
+                <Image src={inflationphoto} style={style.navPhotos}/>
+              </Link>
               <h4 text-align='center'>Inflation</h4>
             </Grid.Column>
             <Grid.Column textAlign='center'>
-              <Image src={liquidityphoto} style={style.navPhotos}/>
+              <Link to='/liquidity'>
+                <Image src={liquidityphoto} style={style.navPhotos}/>
+              </Link>
               <h4 text-align='center'>Liquidity</h4>
             </Grid.Column>
             <Grid.Column textAlign='center'>
-              <Image src={ltcphoto} style={style.navPhotos}/>
+              <Link to='/longtermcare'>
+                <Image src={ltcphoto} style={style.navPhotos}/>
+              </Link>
               <h4 text-align='center'>Long Term Care</h4>
             </Grid.Column>
             <Grid.Column textAlign='center'>
-              <Image src={legacyphoto} style={style.navPhotos}/>
+              <Link to='/legacy'>
+                <Image src={legacyphoto} style={style.navPhotos}/>
+              </Link>
               <h4 text-align='center'>Legacy</h4>
             </Grid.Column>
           </Grid.Row>
