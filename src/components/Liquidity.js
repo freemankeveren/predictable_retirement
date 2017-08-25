@@ -40,7 +40,7 @@ class Liquidity extends Component {
         </Segment>
         <Segment basic textAlign='center' style={style.stop}>
           <h2 text-align='center'>
-            Vehicles with high liquidity.
+            Vehicles with High Liquidity.
           </h2>
           <h4 text-align='center'>
             Example Text

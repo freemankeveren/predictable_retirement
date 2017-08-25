@@ -39,6 +39,10 @@ const style = {
     backgroundSize: 'cover',
     minHeight: '600px',
   },
+
+  paddingFromCenter:{
+    padding: '200px'
+  }
 }
 
 class FileConcepts extends Component {
@@ -50,7 +54,7 @@ class FileConcepts extends Component {
     <Grid columns={2} padded='vertically'>
       <Grid.Column style={style.incomePhoto} />
 
-      <Grid.Column verticalAlign='middle' textAlign='left'>
+      <Grid.Column verticalAlign='middle' textAlign='left' style={style.paddingFromCenter}>
         <h3>Income</h3>
         <h1>Stop the
             transfer of <br/>
@@ -62,7 +66,7 @@ class FileConcepts extends Component {
     </Grid>
 
     <Grid columns={2} padded='vertically'>
-      <Grid.Column verticalAlign='middle' textAlign='right'>
+      <Grid.Column verticalAlign='middle' textAlign='right' style={style.paddingFromCenter}>
         <h3>Inflation</h3>
         <h1>Beat the
             invisable <br/>
@@ -76,7 +80,7 @@ class FileConcepts extends Component {
     <Grid columns={2} padded='vertically'>
       <Grid.Column style={style.liquidityPhoto} />
 
-      <Grid.Column verticalAlign='middle' textAlign='left'>
+      <Grid.Column verticalAlign='middle' textAlign='left' style={style.paddingFromCenter}>
         <h3>Liquidity</h3>
         <h1>Money in
             motion <br/>
@@ -86,7 +90,7 @@ class FileConcepts extends Component {
       </Grid.Column>
     </Grid>
     <Grid columns={2} padded='vertically'>
-      <Grid.Column verticalAlign='middle' textAlign='right'>
+      <Grid.Column verticalAlign='middle' textAlign='right' style={style.paddingFromCenter}>
         <h3>Long Term Care</h3>
         <h1>Prepare for
             long term <br/>
@@ -102,7 +106,7 @@ class FileConcepts extends Component {
     <Grid columns={2} padded='vertically'>
       <Grid.Column style={style.legacyPhoto} />
 
-      <Grid.Column verticalAlign='middle' textAlign='left'>
+      <Grid.Column verticalAlign='middle' textAlign='left' style={style.paddingFromCenter}>
         <h3>Legacy</h3>
         <h1>What will
             your legacy <br/>

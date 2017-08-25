@@ -45,7 +45,7 @@ class Longtermcare extends Component {
           <h4 text-align='center'>
             Just becasue your are open (or about to open) for business, does not necessarily mean you
             have put yourself on the map. You can not effectively establish credit until you have established
-            your business! Be sure to check the following item off your To-Do list.
+            your business!<br/> Be sure to check the following item off your To-Do list.
           </h4>
         </Segment>
       </div>

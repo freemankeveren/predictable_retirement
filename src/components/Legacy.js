@@ -44,7 +44,7 @@ class Legacy extends Component {
           </h2>
           <h4 text-align='center'>
             This is probably the number one rule in any credit situation. Paying your bills on time shows
-            that you are reliable and can effectively manage (and pay off) your debt. Late payments,
+            that you are reliable and can effectively manage (and pay off) your debt.<br/> Late payments,
             especially severely delinquent ones, will bring down your credit score and negatively impact
             your business and profile.
           </h4>

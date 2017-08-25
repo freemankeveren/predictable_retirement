@@ -40,7 +40,7 @@ class Inflation extends Component {
         </Segment>
         <Segment basic textAlign='center' style={style.stop}>
           <h2 text-align='center'>
-            3 Ways you can outsmart inflation.
+            3 Ways You can Outsmart Inflation.
           </h2>
           <h4 text-align='center'>
             Example Text

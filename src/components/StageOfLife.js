@@ -41,7 +41,7 @@ class StageOfLife extends Component {
         <Segment basic>
           <Grid columns={2}>
             <Grid.Column>
-              <div>Hello</div>
+              <div></div>
             </Grid.Column>
             <Grid.Column>
               <h3>Distribution</h3>

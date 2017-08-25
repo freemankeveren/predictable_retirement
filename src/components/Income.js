@@ -41,7 +41,7 @@ class Income extends Component {
         </Segment>
         <Segment basic textAlign='center' style={style.stop}>
           <h2 text-align='center'>
-            Stop the transfer of wealth away from you.
+            Stop the Transfer of Wealth Away from You.
           </h2>
           <h4 text-align='center'>
             Example Text
