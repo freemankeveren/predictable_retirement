@@ -37,7 +37,7 @@ class NavBar extends Component {
     return (
       <nav style={style.header}>
         <section style={style.widthContainer}>
-        <Menu secondary style={style.menuInside}>
+        <Menu secondary stackable style={style.menuInside}>
         <Menu.Item>
         <Image src={logo} size='mini' />
         </Menu.Item>

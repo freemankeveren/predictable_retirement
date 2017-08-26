@@ -35,7 +35,7 @@ class Footer extends Component {
   render() {
     return (
       <div style={style.divStyle}>
-        <Menu secondary>
+        <Menu secondary stackable>
         <Menu.Item>
         <Image src={logo} size='mini' />
         </Menu.Item>
