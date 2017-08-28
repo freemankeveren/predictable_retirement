@@ -42,9 +42,6 @@ class Home extends Component {
         <Segment basic>
           <Testimonials />
         </Segment>
-        <Segment basic>
-          <Blogs />
-        </Segment>
       </div>
     );
   }

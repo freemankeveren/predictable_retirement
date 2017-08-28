@@ -15,12 +15,7 @@ const style = {
   },
 
   stop:{
-    borderRadius: '0',
-    boxShadow: 'none',
     padding: '64px',
-    margin:'0',
-    fontSize: '48px',
-    fontWeight: '200',
   },
 
   h0:{
@@ -42,7 +37,7 @@ class Contact extends Component {
             Let Us Know!
           </h1>
         </Segment>
-        <Segment basic>
+        <Segment basic style={style.stop}>
           <Grid columns={2}>
             <Grid.Column>
               <Form centered>

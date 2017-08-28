@@ -80,11 +80,6 @@ class Footer extends Component {
               </Dropdown.Menu>
             </Dropdown>
             <Menu.Item>
-              <Link to='/blog' style={{color:'black'}}>
-                BLOG
-              </Link>
-            </Menu.Item>
-            <Menu.Item>
               <Link to='/contact' style={{color:'black'}}>
                 CONTACT
               </Link>
