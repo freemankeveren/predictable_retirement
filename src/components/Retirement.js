@@ -41,7 +41,7 @@ class Retirement extends Component {
     return (
     <div>
     <Segment basic textAlign='center'>
-      <h1 text-align='center' style={style.h0}>
+      <h1 text-align='center'>
         Find Retirement Peace of Mind.
       </h1>
       <h4 text-align='center'>
