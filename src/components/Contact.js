@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Segment, Grid, Form, Input, TextArea, Button } from 'semantic-ui-react';
 
+import companyPicture from '../assets/companyPicture.jpg';
+
 const style = {
+
+  companyPicture:{
+    background: `url(${companyPicture}) no-repeat center center`,
+    backgroundSize: 'cover',
+    minHeight: '600px',
+  },
 
   heroFront:{
     borderRadius: '0',
@@ -65,6 +73,7 @@ class Contact extends Component {
                 </Segment>
               </Form>
             </Grid.Column>
+            <Grid.Column style={style.companyPicture} />
           </Grid>
         </Segment>
       </div>
