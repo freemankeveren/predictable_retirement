@@ -21,6 +21,16 @@ const style = {
     padding: '0',
     margin: '0'
   },
+
+  testimonials:{
+    borderRadius: '0',
+    boxShadow: 'none',
+    padding: '64px',
+    backgroundColor: '#F4FCFF',
+    width: '100%',
+    flexGrow: '1',
+    margin: 'auto',
+  },
 }
 
 class Home extends Component {
@@ -39,7 +49,7 @@ class Home extends Component {
         <Segment basic>
           <StageOfLife />
         </Segment>
-        <Segment basic>
+        <Segment basic style={style.testimonials}>
           <Testimonials />
         </Segment>
       </div>

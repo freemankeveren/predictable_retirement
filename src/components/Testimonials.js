@@ -8,7 +8,6 @@ class Testimonials extends Component {
   render() {
     return (
     <div>
-      <Segment basic secondary>
         <Grid columns={3}>
           <Grid.Column>
             <h2>Testimonials</h2>
@@ -17,7 +16,6 @@ class Testimonials extends Component {
                 Retirement with our system.</h4>
           </Grid.Column>
         </Grid>
-      </Segment>
     </div>
     )
   }
