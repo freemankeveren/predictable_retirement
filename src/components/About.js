@@ -38,7 +38,7 @@ class Income extends Component {
           </h1>
           <h2 text-align='center' style={style.h0}>
             Our goal is your goal!
-          <h2>
+          </h2>
         </Segment>
       </div>
     );
